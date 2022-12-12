@@ -1,8 +1,8 @@
 // const jwt = require("jsonwebtoken");
-const Energyadvisor = require("../../models/Admin/energyadvisor");
+const Energyadvisor = require("../../models/admin/energyadvisor");
 const { sendMail } = require('../../utils/mailService');
 const bcrypt = require('bcrypt');
-const energyadvisorupdate = require("../../models/Admin/energyadvisorupdate");
+const energyadvisorupdate = require("../../models/admin/energyadvisorupdate");
 
 exports.readdata = async (req, res) => {
  

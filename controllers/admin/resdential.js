@@ -1,5 +1,5 @@
 // const jwt = require("jsonwebtoken");
-const Resdential = require("../../models/Admin/resdential");
+const Resdential = require("../../models/admin/resdential");
 
 exports.addData = async (req, res) => {
   if (!req.body.name) {

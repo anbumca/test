@@ -1,5 +1,5 @@
 //const jwt = require("jsonwebtoken");
-const Generalsettings = require("../../models/Admin/generalsettings");
+const Generalsettings = require("../../models/admin/generalsettings");
 
 exports.addData = async (req, res) => {
   if (!req.body) {

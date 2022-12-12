@@ -1,5 +1,5 @@
 // const jwt = require("jsonwebtoken");
-const CmsData = require("../../models/Admin/cmsdata");
+const CmsData = require("../../models/admin/cmsdata");
 
 exports.addData = async (req, res) => {
   if (!req.body.content) {

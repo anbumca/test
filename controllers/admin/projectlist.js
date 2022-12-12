@@ -1,5 +1,5 @@
 // const jwt = require("jsonwebtoken");
-const Productlist = require("../../models/Admin/projectlist");
+const Productlist = require("../../models/admin/projectlist");
 const { sendMail } = require('../../utils/mailService');
 const bcrypt = require('bcrypt');
 

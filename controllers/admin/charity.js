@@ -1,5 +1,5 @@
 // const jwt = require("jsonwebtoken");
-const Charity = require("../../models/Admin/charity");
+const Charity = require("../../models/admin/charity");
 
 exports.addData = async (req, res) => {
   if (!req.body.charity_name) {

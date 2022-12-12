@@ -1,5 +1,5 @@
 // const jwt = require("jsonwebtoken");
-const Citylist = require("../../models/Admin/citylist");
+const Citylist = require("../../models/admin/citylist");
 
 exports.addData = async (req, res) => {
   

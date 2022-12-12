@@ -1,6 +1,6 @@
 // const jwt = require("jsonwebtoken");
-const Installer = require("../../models/Admin/installer");
-const InstallerAddress =require("../../models/Admin/installeraddress");
+const Installer = require("../../models/admin/installer");
+const InstallerAddress =require("../../models/admin/installeraddress");
 const { sendMail } = require('../../utils/mailService');
 
 exports.readdata = async (req, res) => {

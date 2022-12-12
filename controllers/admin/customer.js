@@ -1,6 +1,6 @@
 // const jwt = require("jsonwebtoken");
-const Customerlist = require("../../models/Admin/customer");
-const Bidstatus = require("../../models/Admin/bidslist");
+const Customerlist = require("../../models/admin/customer");
+const Bidstatus = require("../../models/admin/bidslist");
 
 exports.readdata = async (req, res) => {
  

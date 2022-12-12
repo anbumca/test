@@ -1,5 +1,5 @@
 //const jwt = require("jsonwebtoken");
-const Smtplist = require("../../models/Admin/smtplist");
+const Smtplist = require("../../models/admin/smtplist");
 
 exports.addData = async (req, res) => {
   if (!req.body) {

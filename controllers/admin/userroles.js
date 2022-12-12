@@ -1,5 +1,5 @@
 // const jwt = require("jsonwebtoken");
-const Userroles = require("../../models/Admin/userroles");
+const Userroles = require("../../models/admin/userroles");
 
 exports.addData = async (req, res) => {
   if (!req.body.name) {

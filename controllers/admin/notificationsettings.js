@@ -1,5 +1,5 @@
 //const jwt = require("jsonwebtoken");
-const Notificationsettings = require("../../models/Admin/notificationsettings");
+const Notificationsettings = require("../../models/admin/notificationsettings");
 
 exports.addData = async (req, res) => {
   if (!req.body) {
