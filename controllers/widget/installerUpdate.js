@@ -1,4 +1,4 @@
-const InstallerUpdate = require("../../models/widget/installerupdate");
+const InstallerUpdate = require("../../models/widget/installerUpdate");
 const bcrypt = require('bcrypt');
 
 exports.updateInstaller = async (req, res) => {
