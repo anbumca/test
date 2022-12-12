@@ -56,7 +56,7 @@ mysqlConnect();
 
 // Widget
 const userRoutes = require("./routes/widget/user");
-// const settingRoutes = require("./routes/widget/settings");
+const settingRoutes = require("./routes/widget/settings");
 // const search = require("./routes/widget/search");
 // const resdential = require("./routes/widget/resdential");
 // const product = require("./routes/widget/products");
@@ -93,7 +93,7 @@ app.use(cors());
 
 // Routes widget
 app.use("/api", userRoutes);
-// app.use("/api/setting", settingRoutes);
+app.use("/api/setting", settingRoutes);
 // app.use("/api/projectinformation", projectinformation);
 // app.use("/api/resdential", resdential);
 // app.use("/api/product", product);
