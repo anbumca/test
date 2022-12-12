@@ -5,7 +5,7 @@ const {
     editData,
     deleteData,
     readdata
-} = require("../../controllers/Admin/citylist");
+} = require("../../controllers/admin/citylist");
 const authorize = require("../../_middleware/authorize");
 
 router.post("/addcity", addData);

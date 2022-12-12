@@ -6,7 +6,7 @@ const {
     editcustomer,
     deletecustomer,
     activecustomer
-} = require("../../controllers/Admin/customer");
+} = require("../../controllers/admin/customer");
 const authorize = require("../../_middleware/authorize");
 
 //router.post("/addcity", addData);

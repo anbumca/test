@@ -5,7 +5,7 @@ const {
     editData,
     deleteData,
     readdata
-} = require("../../controllers/Admin/resdential");
+} = require("../../controllers/admin/resdential");
 //const authorize = require("../../_middleware/authorize");
 
 router.post("/add",  addData);

@@ -8,7 +8,7 @@ const {
     getinstallerdetails,
     editinstaller,
     getinstdetails
-} = require("../../controllers/Admin/installer");
+} = require("../../controllers/admin/installer");
 const authorize = require("../../_middleware/authorize");
 
 //router.post("/addcity", addData);

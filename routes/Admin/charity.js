@@ -6,7 +6,7 @@ const {
     deleteData,
     readdata,
     activedata
-} = require("../../controllers/Admin/charity");
+} = require("../../controllers/admin/charity");
 //const authorize = require("../../_middleware/authorize");
 
 router.post("/add",  addData);

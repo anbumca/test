@@ -7,7 +7,7 @@ const {
     editenergyadvisor,
     deleteData,
     activeupdate
-} = require("../../controllers/Admin/energyadvisor");
+} = require("../../controllers/admin/energyadvisor");
 const authorize = require("../../_middleware/authorize");
 
 //router.post("/addcity", addData);

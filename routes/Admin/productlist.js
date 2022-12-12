@@ -7,7 +7,7 @@ const {
     editproductlist,
     deleteData
     
-} = require("../../controllers/Admin/projectlist");
+} = require("../../controllers/admin/projectlist");
 const authorize = require("../../_middleware/authorize");
 
 

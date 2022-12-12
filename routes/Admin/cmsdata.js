@@ -6,7 +6,7 @@ const {
     deleteData,
     readdata,
     getcmsdata
-} = require("../../controllers/Admin/cmsdata");
+} = require("../../controllers/admin/cmsdata");
 const authorize = require("../../_middleware/authorize");
 
 router.post("/addcms", addData);

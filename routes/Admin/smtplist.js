@@ -4,7 +4,7 @@ const {
     addData,
     readdata
     
-} = require("../../controllers/Admin/smtplist");
+} = require("../../controllers/admin/smtplist");
 const authorize = require("../../_middleware/authorize");
 
 router.post("/adddetails", addData);

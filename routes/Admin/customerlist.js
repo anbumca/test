@@ -10,7 +10,7 @@ const {
     getinstdetails,
     getprojectdetails,
     getinstallerdetails
-} = require("../../controllers/Admin/customerlist");
+} = require("../../controllers/admin/customerlist");
 const authorize = require("../../_middleware/authorize");
 
 //router.post("/addcity", addData);

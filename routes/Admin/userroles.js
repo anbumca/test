@@ -7,7 +7,7 @@ const {
     readdata,
     getuserdata,
     activedata
-} = require("../../controllers/Admin/userroles");
+} = require("../../controllers/admin/userroles");
 const authorize = require("../../_middleware/authorize");
 
 router.post("/adduserroles", addData);

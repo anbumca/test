@@ -4,7 +4,7 @@ const {
     addData,
     readdata
     
-} = require("../../controllers/Admin/notificationsettings");
+} = require("../../controllers/admin/notificationsettings");
 const authorize = require("../../_middleware/authorize");
 
 router.post("/addnotificationsettings", addData);

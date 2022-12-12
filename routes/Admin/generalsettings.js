@@ -4,7 +4,7 @@ const {
     addData,
     readdata
     
-} = require("../../controllers/Admin/generalsettings");
+} = require("../../controllers/admin/generalsettings");
 const authorize = require("../../_middleware/authorize");
 
 router.post("/addgeneralsettings", addData);
