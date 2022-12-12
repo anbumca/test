@@ -54,6 +54,7 @@ const hardwarelist =require("./routes/admin/productlist");
 const cmsdata =require("./routes/admin/cmsdata");
 const customer=require("./routes/admin/customer");
 
+
 // Widget
 const userRoutes = require("./routes/widget/user");
 const settingRoutes = require("./routes/widget/settings");
