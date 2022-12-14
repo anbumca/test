@@ -115,9 +115,9 @@ const HTTPport = process.env.HTTPPORT || 3000;
 const HTTPSport = process.env.HTTPSPORT || 4000;
 
 const options = {
-  key  : fs.readFileSync('ssl/key.pem'),
-  ca   : fs.readFileSync('ssl/csr.pem'),
-  cert : fs.readFileSync('ssl/cert.pem')
+  key  : fs.readFileSync('./ssl/key.pem'),
+  ca   : fs.readFileSync('./ssl/csr.pem'),
+  cert : fs.readFileSync('./ssl/cert.pem')
 }
 
 // const ipaddress = process.env.IP_ADDRESS || '127.0.0.1';
@@ -126,7 +126,7 @@ http.createServer(app).listen(HTTPport, function () {
   console.log("Mock server listening on port " + HTTPport);
 });
 
-https.createServer(app).listen(HTTPSport, function() {
+https.createServer(options, app).listen(HTTPSport, function() {
   console.log('Server listening on port %d in %s mode', + HTTPSport);
 });
 
