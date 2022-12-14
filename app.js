@@ -126,9 +126,9 @@ http.createServer(app).listen(HTTPport, function () {
   console.log("Mock server listening on port " + HTTPport);
 });
 
-https.createServer(app).listen(HTTPSport, function() {
-  console.log('Server listening on port %d in %s mode', + HTTPSport);
-});
+// https.createServer(app).listen(HTTPSport, function() {
+//   console.log('Server listening on port %d in %s mode', + HTTPSport);
+// });
 
 // Starting a server
 // app.listen(port, () => {
