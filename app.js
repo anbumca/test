@@ -3,6 +3,9 @@ const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const fileUpload = require('express-fileupload');
+const http = require('http')
+const https = require('https')
+const fs = require('fs');
 
 require("dotenv").config();
 
@@ -108,11 +111,26 @@ app.use("/api/bidlist",bidlist);
 
 
 // PORT
-const port = process.env.PORT || 3000;
+const HTTPport = process.env.HTTPPORT || 3000;
+const HTTPSport = process.env.HTTPSPORT || 4000;
 
-const ipaddress = process.env.IP_ADDRESS || '127.0.0.1';
+const options = {
+  key  : fs.readFileSync('ssl/key.pem'),
+  ca   : fs.readFileSync('ssl/csr.pem'),
+  cert : fs.readFileSync('ssl/cert.pem')
+}
+
+// const ipaddress = process.env.IP_ADDRESS || '127.0.0.1';
+
+http.createServer(app).listen(HTTPport, function () {
+  console.log("Mock server listening on port " + HTTPport);
+});
+
+https.createServer(app).listen(HTTPSport, function() {
+  console.log('Server listening on port %d in %s mode', + HTTPSport);
+});
 
 // Starting a server
-app.listen(port,ipaddress, () => {
-  console.log(`app is running at ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`app is running at ${port}`);
+// });

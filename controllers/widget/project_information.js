@@ -99,7 +99,7 @@ exports.imagePdf = async (req, res) => {
     });
   }
   // const projectInfo = new ProjectInfo(user_id);
-  if (req?.files?.image) {
+  if (req.files.image) {
     const Image = req.files.image;
     Image.mv(`./public/image/${Image.name}`, function (err) {
       if (err) {
@@ -182,7 +182,7 @@ exports.panelimagePdf = async (req, res) => {
     });
   }
   // const projectInfo = new ProjectInfo(user_id);
-  if (req?.files?.image) {
+  if (req.files.image) {
     const Image = req.files.image;
     Image.mv(`./public/image/${Image.name}`, function (err) {
       if (err) {

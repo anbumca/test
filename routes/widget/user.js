@@ -8,12 +8,13 @@ const {
   login,
   google,
   facebook,
-  forgetpassword,adminforgetpassword
+  forgetpassword,adminforgetpassword, checking
 } = require("../../controllers/widget/user");
 const { addAuroraUser } = require("../../controllers/widget/aurora");
 const authorize = require("../../_middleware/authorize");
 
 
+router.get("/", checking);
 router.post("/register", register);
 router.post("/aurora/user", addAuroraUser);
 

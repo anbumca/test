@@ -371,3 +371,10 @@ exports.adminforgetpassword = async (req, res) => {
     }
   });
 };
+
+exports.checking = async (req, res) => {
+  console.log('Working......................');
+  res.status(200).json({
+    message: "Working........"
+  });
+};
